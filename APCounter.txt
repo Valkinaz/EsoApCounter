@@ -1,0 +1,7 @@
+## Title: AP Counter
+## Author: @Valkinaz
+## AddOnVersion: 0.0.1
+## APIVersion: 101041
+
+APCounter.xml
+APCounter.lua
