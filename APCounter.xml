@@ -1,6 +1,6 @@
 <GuiXml xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sir.insidi.at/or/schema/esoui.xsd">
     <Controls>
-        <TopLevelControl name="APCounter_Window" mouseEnabled="true" movable="true" allowBringToTop="true" tier="HIGH" hidden="true">
+        <TopLevelControl name="APCounter_Window" mouseEnabled="true" movable="true" hidden="true" allowBringToTop="true" tier="HIGH">
             <Dimensions x="1390" y="750" />
             <Anchor point="CENTER" relativeTo="GuiRoot" relativePoint="CENTER" offsetX="0" offsetY="0" />
 
@@ -15,7 +15,7 @@
                     <Controls>
                         <Button name="$(parent)_Hide">
                             <Anchor point="TOPRIGHT" relativeTo="$(parent)" relativePoint="TOPRIGHT" offsetX="-3" offsetY="3" />
-                            <OnMouseUp>APCounter.Close()</OnMouseUp>
+                            <OnMouseUp>APCounter.ToggleWindow()</OnMouseUp>
                             <Dimensions x="25" y="25" />
                             <Textures normal="/esoui/art/buttons/decline_up.dds" pressed="/esoui/art/buttons/decline_down.dds" mouseOver="/esoui/art/buttons/decline_over.dds" />
                         </Button>
